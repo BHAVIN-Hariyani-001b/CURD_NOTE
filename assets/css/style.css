@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Anton&family=Kaushan+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    max-width: 100%;
+}
+
+.main-section header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #a6d0f1bc;
+    /* border-bottom: 1px solid grey; */
+}
+
+@media (max-width:600px) {
+    .main-section header nav {
+        justify-content: space-between;
+    }
+}
+
+.main-section header nav .logo {
+    text-decoration: none;
+    font-family: "Pacifico", cursive;
+    color: #000;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.main-section header nav .btn {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-section header nav .btn a {
+    text-decoration: none;
+    color: #000;
+    background-color: #567ae3;
+    padding: 10px 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #fff;
+
+    &:hover {
+        background-color: #436ff4
+    }
+}
+
+.main-section header nav .btn .Login {
+    border: 1px solid #edede9;
+    background-color: transparent;
+    color: #000;
+
+    &:hover {
+        background-color: #f1efef;
+    }
+}
+
+.btn-logout {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-logout a {
+    text-decoration: none;
+    padding: 10px 1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.btn-logout a .userName {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-logout a .userName span {
+    font-weight: 500;
+}
+
+.btn-logout a:last-child {
+    background: #436ff4;
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width:600px) {
+    .btn-logout {
+        gap: 7px;
+    }
+
+    .btn-logout a {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .btn-logout a .userName {
+        white-space: nowrap;
+        width: 110px;
+    }
+}
+
+
+/* login page */
+
+.main-login-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 80vh;
+    flex-wrap: wrap;
+}
+
+.main-login-section .img-section .img-login-section img {
+    width: 30rem;
+}
+
+
+.main-login-section .login form {
+    width: 30rem;
+    text-align: center;
+    /* background-color: #a8a8a8; */
+}
+
+.main-login-section .login form .login-section {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+
+}
+
+.main-login-section .login form .login-section .input-section {
+    width: 100%;
+}
+
+.main-login-section .login form .login-section .input-section input {
+    height: 2.5rem;
+    padding: 0rem .5rem;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.main-login-section .login form .login-section button {
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+        background-color: #e9e7e7c7;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.265);
+    }
+}
+
+.main-login-section .login form .login-section .forgot {
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.main-login-section .login form .login-section .SingUp {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #567ae3;
+    height: 2.5rem;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #436ff4e6;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (max-width:600px) {
+    .main-login-section .login form {
+        width: 20rem;
+    }
+
+    .main-login-section {
+        justify-content: center;
+    }
+
+    .main-login-section .img-section .img-login-section img {
+        display: none;
+    }
+
+    .main-login-section .login form .login-section {
+        padding: 3rem 0;
+    }
+}
+
+/* sign up page */
+
+.main-sing-up {
+    background-position: center;
+    background-size: cover;
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-sing-up img {
+    width: 30rem;
+}
+
+.main-sing-up h2 {
+    font-size: 3rem;
+}
+
+.main-sing-up h1 {
+    font-size: 5rem;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-fill-color: transparent;
+    font-family: "Anton", "Anton Fallback";
+    font-weight: 300;
+}
+
+.main-sing-up h1::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #ef0194;
+    border-radius: 50%;
+    filter: blur(70px);
+    left: 3rem;
+    /* bottom: 10rem; */
+}
+
+.main-sing-up h2::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #01bfef;
+    border-radius: 50%;
+    filter: blur(70px);
+    left: 9rem;
+    /* bottom: 10rem; */
+}
+
+.main-sing-up h1::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #6c01ef;
+    border-radius: 50%;
+    filter: blur(70px);
+    left: 8rem;
+    /* bottom: 4rem; */
+}
+
+@media (max-width:1400px) {
+    .main-sing-up img {
+        display: none;
+    }
+
+    .main-sing-up {
+        background-image: url(/project/nodeApp/assets/img/gradientBackground.png);
+    }
+
+    .main-sing-up h1::before {
+        display: none;
+    }
+
+    .main-sing-up h1::after {
+        display: none;
+    }
+
+    .main-sing-up h2::after {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .main-sing-up {
+        height: 10rem;
+        width: auto;
+        min-width: 20rem;
+    }
+
+    .main-sing-up h2 {
+        font-size: 2rem;
+    }
+
+    .main-sing-up h1 {
+        font-size: 4rem;
+    }
+}
+
+.modal {
+    position: absolute;
+    border: 2px solid lightgrey;
+    right: 1rem;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-data {
+    position: relative;
+    transform: translateY(-3rem);
+}
+
+.userName {
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 5rem; */
+}
+
+main .new-node {
+    align-self: flex-end;
+    margin: 3rem 4rem 2rem;
+    background-color: #436ff4;
+    padding: 10px 1rem;
+    color: #fff;
+    border-radius: 10px;
+}
+
+main .list {
+    display: flex;
+    width: 80vw;
+    padding: 1rem;
+    border-radius: 10px 0px 10px 10px;
+    /* box-shadow: 0 0px 3px #0000001a, 0 1px 2px -1px #0000001a; */
+    box-shadow: 0 0px 3px #0000001a, 0 1px 2px -1px #0000001a;
+    background-color: #ecebeb38;
+    margin: 1.5rem;
+    position: relative;
+}
+
+main .list .list-data {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+main .list .list-data .Tital {
+    display: flex;
+    align-items: center;
+}
+
+main .list .list-data .Tital .manage {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    gap: 1rem;
+    z-index: 1;
+}
+
+main .list .list-data .Tital .manage a {
+    text-decoration: none;
+
+    &:hover {
+        color: #01bfef;
+    }
+}
+
+
+main .list .list-data .Tital .main-tital {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+main .list .list-data .Description {
+    /* font-size: ; */
+}
+
+@media (max-width:600px) {
+    .modal-data {
+        position: relative;
+        transform: translateY(0rem);
+    }
+
+    main .new-node {
+        margin: 2rem 1rem;
+    }
+
+    main .list {
+        /* min-width: 18vw; */
+    }
+}
+
+@media (max-width:900px) {
+    main .list .list-data .Tital .manage {
+        gap: 10px;
+        position: absolute;
+        top: -1.5rem;
+        right: 0;
+        box-shadow: 0 -1px 3px 0 #0000001a, 0 1px 0px -1px #0000001a;
+        padding: 5px 5px 0px 5px;
+        border-radius: 10px 10px 0px 0px;
+        z-index: 0;
+    }
+
+    main .list .list-data .Tital .manage::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        /* background-color:red; */
+        left: -10px;
+        border-radius: 0px 0px 10px 0px;
+        box-shadow: 1px 2px 3px #0000001a;
+        bottom: 0;
+    }
+}
+
+/* note section */
+.note {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* background-color: #01bfef; */
+    background-color: #4e4d4d3c;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    top: 0;
+    color: #FFF;
+    height: 100%;
+    z-index: 9999;
+}
+
+.main-section-addnote {
+    display: flex;
+    /* background-color: #6c01ef; */
+    background-color: #00000067;
+    border-radius: 1rem;
+    padding: 3rem;
+    /* width: 0rem; */
+}
+
+.note .main-section-addnote form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.note .main-section-addnote form .hading-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.note .main-section-addnote form .hading-section .hading-cancel {
+    border-radius: 5px;
+    padding: 8px 12px;
+
+    &:hover {
+        background-color: #ffffff4b;
+    }
+}
+
+.note .main-section-addnote form .add-node-section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0rem;
+}
+
+.note .main-section-addnote form .add-node-section input {
+    padding: 10px 10px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #00000036;
+    color: #FFF;
+}
+
+.note .main-section-addnote form .add-node-section textarea {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #00000036;
+    color: #FFF;
+    margin: 10px 0px;
+    padding: 10px 10px;
+}
+
+
+.note .main-section-addnote form button {
+    padding: 10px 0px;
+    margin: 1rem 0px;
+    border-radius: 5px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background-color: #2256f4;
+    color: #FFF;
+}
+
+.image-section{
+    width: 50rem;
+    align-self: center;
+}
+
+@media (max-width:600px) {
+    .note .main-section-addnote form {
+        width: 14rem;
+    }
+
+    .note .main-section-addnote form .hading-section .hading-title h2 {
+        font-size: 20px;
+    }
+
+    .note .main-section-addnote form .hading-section .hading-title p {
+        font-size: 14px;
+    }
+    .image-section{
+        position: absolute;
+        top: 15rem;
+    }
+}
+
