@@ -24,9 +24,3 @@ A simple web-based CRUD (Create, Read, Update, Delete) application to manage dat
 - XAMPP for PHP installed
 - A web browser
 - MySQL or similar database system
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/crud-app.git
