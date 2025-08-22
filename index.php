@@ -50,9 +50,13 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <meta name="description" content="A simple CRUD Note App to create, edit, update, and delete notes easily.">
+  <meta name="keywords" content="note app, CRUD app, to-do app, notes, task manager, productivity, reminder, personal notes">
+  <meta name="author" content="Bhavin Hariyani">
   <link rel="stylesheet" href="/project/nodeApp/assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Note app</title>
+  <link rel="icon" type="image/png" href="assets/img/todo_icon.png">
 </head>
 
 <body>
