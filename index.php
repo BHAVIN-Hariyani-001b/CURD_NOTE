@@ -27,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     }
   } else {
     $showError = "Youare first Login";
+    header("Location: /project/nodeApp/assets/partial/_login.php");
   }
 }
 
@@ -65,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
     </div>
     <div class="note" id="addNewNote">
       <div class="main-section-addnote">
-        <form action="./index.php" method="post">
+        <form action="./index.php?action=true" method="post">
           <div class="hading-section">
             <div class="hading-title">
               <h2>Create New Task</h2>
@@ -87,7 +88,6 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
         </form>
       </div>
     </div>
-
     <?php
 
     if (isset($_SESSION['userName'])) {
@@ -125,6 +125,8 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
     if (error !== "") {
       alert(error);
     }
+
+    
   </script>
 </body>
 

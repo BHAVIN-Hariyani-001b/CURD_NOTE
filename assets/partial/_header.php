@@ -12,7 +12,7 @@
   <div class="main-section">
     <header>
       <nav>
-        <a href="/project/nodeApp/index.php" class="logo">Bhavin</a>
+        <a href="/project/nodeApp/index.php" class="logo">Tudo App</a>
         <?php
         // session_start();
         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {

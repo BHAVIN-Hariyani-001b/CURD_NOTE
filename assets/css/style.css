@@ -395,10 +395,6 @@ main .list .list-data .Tital .main-tital {
     font-weight: 500;
 }
 
-main .list .list-data .Description {
-    /* font-size: ; */
-}
-
 @media (max-width:600px) {
     .modal-data {
         position: relative;
@@ -407,10 +403,6 @@ main .list .list-data .Description {
 
     main .new-node {
         margin: 2rem 1rem;
-    }
-
-    main .list {
-        /* min-width: 18vw; */
     }
 }
 
